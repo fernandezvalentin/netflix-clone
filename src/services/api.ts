@@ -8,6 +8,9 @@ const api = axios.create({
   },
 });
 
+console.log("Configurando API con URL:", import.meta.env.VITE_TMDB_BASE_URL);
+console.log("API Key cargada:", import.meta.env.VITE_TMDB_API_KEY ? "SÍ" : "NO");
+
 export const requests = {
   fetchTrending: '/trending/all/week',
   fetchNetflixOriginals: '/discover/tv?with_networks=213',
