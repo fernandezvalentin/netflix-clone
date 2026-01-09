@@ -1,0 +1,9 @@
+.app {
+  background-color: var(--netflix-black);
+}
+
+.app__rows {
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+}

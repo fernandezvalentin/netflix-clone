@@ -1,0 +1,146 @@
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  overflow-y: auto;
+}
+
+.modal__content {
+  background-color: #181818;
+  width: 90%;
+  max-width: 850px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #181818;
+  color: white;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__banner {
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.modal__banner--fadeBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(180deg, transparent, #181818);
+}
+
+.modal__banner--contents {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.modal__banner--contents h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.modal__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal__btn {
+  padding: 8px 25px;
+  border-radius: 4px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal__btn--play {
+  background-color: white;
+  color: black;
+}
+
+.modal__btn--round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(42, 42, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__details {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.modal__info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.modal__match {
+  color: #46d369;
+}
+
+.modal__hd {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 4px;
+  font-size: 0.7rem;
+  border-radius: 3px;
+}
+
+.modal__overview {
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.modal__details--right {
+  font-size: 0.9rem;
+}
+
+.modal__details--right p {
+  margin-bottom: 15px;
+}
+
+.modal__details--right span {
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .modal__details {
+    grid-template-columns: 1fr;
+  }
+}
